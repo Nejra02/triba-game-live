@@ -1,0 +1,95 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: Parkinsans, sans-serif;
+    background-color: rgb(227, 221, 221);
+}
+
+nav, footer{
+    background-color: #800020;
+}
+
+.naslov{
+    background-color: rgb(227, 221, 221);
+    font-size: 60px;
+    border-radius: 10px;
+    color: #4f4a4a;
+}
+
+.meni {
+    display: inline-block;
+    font-size: 25px;
+    transition: transform 0.3s;
+}
+
+.meni:hover{
+    transform: scale(1.2);
+    color: rgb(227, 221, 221);
+}
+
+h2{
+    color: #800020;
+}
+
+.novaigra button {
+    width: 100px;
+    padding: 10px;
+    border: 3px solid #800020;
+    color: #4f4a4a;
+}
+
+.box_podnaslov{
+    border: 5px solid #ffd700;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: #4f4a4a;
+
+}
+
+.p1, #buttonUputa, #buttonProjekat, #buttonNovaIgra{
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    color: #800020;
+}
+
+.menu-icon{
+    color: rgb(227, 221, 221);
+    display: none;
+}
+
+.predmet, .studij, .fakultet, .naziv, .autor{
+    display: none;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+
+@media (max-width: 1100px) {
+    .naslov, .meni{
+        font-size: smaller;
+    }
+    .menu {
+        background-color: #800020;
+        position: absolute;
+        left: -100%;
+        transition: left 0.5s;
+      }
+      
+      #menu-toggle:checked ~ .menu {
+        left: 0;
+      }
+      
+      .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      
+
+}
+

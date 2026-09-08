@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Triba</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- BOOTRSTRAP LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS FAJL-->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME BIBLIOTEKA-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+</head>
+<body>
+    <nav class="d-flex p-5 align-items-center justify-content-between">
+        <div><p class="p-3 naslov"> T R I B A G A M E</p></div>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul class="d-flex p-3 menu">
+            <li class="p-3 meni"><a href="#nova_igra">nova igra</a></li>
+            <li class="p-3 meni"><a href="#upute">upute</a></li>
+            <li class="p-3 meni"><a href="#o_projektu">o projektu</a></li>
+        </ul>
+    </nav>
+
+    <div class="container p-5 my-5 text-center box_podnaslov" id="nova_igra">
+        <button onclick="ispisiElemente(buttonNovaIgra,novaigra)" id="buttonNovaIgra"><h2>N O V A &nbsp; I G R A</h2></button>
+        <div id="novaigra" style="display: none;">
+        <h3 style="font-size: 17px; padding-top: 10px; padding-bottom: 10px;">odaberite ploču</h3>
+        <div class="d-flex align-items-center justify-content-center gap-5 novaigra" style="padding-top: 10px; padding-bottom: 10px;">
+            <a href="ploca1.html"><button>8 x 6</button></a>
+            <a href="ploca2.html"><button>8 x 4</button></a>
+            <a href="ploca3.html"><button>6 x 4</button></a>
+            <a href="ploca.html"><button>N ploča</button></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="container p-5 my-5 text-center box_podnaslov" id="upute">
+        <button onclick="ispisiElemente(buttonUputa,uputa)" id="buttonUputa"><h2>U P U T E</h2></button>
+        <p class="p-3" id="uputa" style="display: none;">
+            Igrica se sastoji od 3 standardne ploče ( 8x6 , 8x4 , 6x4 ) i jedne nestandardne N ploče. Dva igrača ( Igrač 1 i Igrač 2 ) igraju naizmjenično.
+            Bočne linije predstavljaju boju igrača koji je na potezu. 
+            Igrač u svom potezu pravi trougao tako što izabere tri tačke iz mreže koje ne leže na istoj pravoj. 
+            Trouglovi se ne smiju sjeći i nijedan vrh ne smije biti zajednički, ali se smiju nalaziti jedan unutar drugog. 
+            Igra je završena kada jedan igrač ostane bez poteza i on gubi.
+        </p>
+    </div>
+
+    <div class="container p-5 my-5 text-center box_podnaslov" id="o_projektu">
+        <button onclick="ispisiElemente(buttonProjekat,projekat)" id="buttonProjekat"><h2>O &nbsp; P R O J E K T U</h2></button>
+        <div id="projekat" style="display: none; padding-top: 10px; padding-bottom: 10px;">
+            <div>
+                <div class="p1">Fakultet</div>
+                <div>
+                <p class="m-0" style="padding-top: 10px;">Prirodno-matematički fakultet</p>
+                <p class="m-0">Zmaja od Bosne 33-35</p>
+                <p class="m-0" style="padding-bottom: 10px;">033 723-723</p>
+                </div>
+            </div>
+            <div>
+                <div class="p1">Studij</div>
+                <div>
+                <p class="m-0" style="padding-top: 10px;">Odsjek za matematičke i kompjuterske nauke</p>
+                <p class="m-0" style="padding-bottom: 10px;">Teorijska kompjuterska nauka</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="p1">Podaci o predmetu</div>
+                <div>
+                <p class="m-0" style="padding-top: 10px;">Web programiranje</p>
+                <p class="m-0">Doc.dr. Sead Delalić</p>
+                <p class="m-0" style="padding-bottom: 10px;">Ass. Iman Bekkaye</p>
+                </div>
+            </div>
+        
+            <div>
+                <div class="p1">Naziv projekta</div>
+                <div>
+                <p class="m-0" style="padding-top: 10px; padding-bottom: 10px;">Triba game</p>
+                </div>
+            </div>
+            <div>
+                <div class="p1">Autor</div>
+                <div>
+                <p class="m-0" style="padding-top: 10px;">Nejra Ćeranić</p>
+                <p class="m-0" style="padding-bottom: 10px;">nejra1310@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex align-items-center justify-content-between" style="font-size: 15px; color: rgb(227, 221, 221); padding: 30px; position: relative; bottom: 0; width: 100%;">
+        <a href="#top">back to top</a>
+        <a>januar 2025. &copy Nejra Ćeranić</a>
+    </footer>
+   <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+
+function ispisiElemente(button,naslov){
+    button.addEventListener("click", function() {
+        if (naslov.style.display === "none") {
+            naslov.style.display = "block";
+        } else {
+            naslov.style.display = "none";
+        }
+    });
+    
+}
+   </script>
+</body>
+</html>
