@@ -93,3 +93,15 @@ h2{
 
 }
 
+
+@media (max-width: 600px) {
+    .novaigra {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .novaigra a,
+    .novaigra button {
+        width: 100%;
+    }
+}

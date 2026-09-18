@@ -108,15 +108,13 @@
             window.scrollTo(0, 0);
         };
 
-function ispisiElemente(button,naslov){
-    button.addEventListener("click", function() {
-        if (naslov.style.display === "none") {
-            naslov.style.display = "block";
-        } else {
-            naslov.style.display = "none";
-        }
-    });
-    
+
+function ispisiElemente(button, naslov) {
+    if (naslov.style.display === "none") {
+        naslov.style.display = "block";
+    } else {
+        naslov.style.display = "none";
+    }
 }
    </script>
 </body>
