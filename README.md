@@ -1,0 +1,1 @@
+Responsive Triba Game. Open index.html. Keep all files together. Canvas drawing coordinates are preserved; pointer coordinates are scaled to match the displayed board.\n
