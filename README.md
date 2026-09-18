@@ -1,1 +1,2 @@
-Responsive Triba Game. Open index.html. Keep all files together. Canvas drawing coordinates are preserved; pointer coordinates are scaled to match the displayed board.\n
+Live link : 
+https://nejra02.github.io/triba-game-live/
